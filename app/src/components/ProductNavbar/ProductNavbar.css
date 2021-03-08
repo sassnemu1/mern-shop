@@ -1,0 +1,24 @@
+.product-navbar {
+    width: 100%;
+    background: #f3f3f3;
+}
+.product-navbar__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product-navbar__menu li {
+    width: 150px;
+    text-align: center;
+    padding: 10px 25px;
+    color: #333;
+    transition: background .3s ease;
+    font-size: 17px;
+}
+    .product-navbar__menu li:hover {
+        background: #D5D5DE;
+    }
+.product-navbar__menu_itemActive {
+    background: #D5D5DE;
+}

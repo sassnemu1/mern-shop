@@ -1,0 +1,40 @@
+.products-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 8px 15px 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+    color: #333;
+}
+.products-image {
+    object-fit: cover;
+}
+.products-name {
+    font-size: 17px;   
+    margin: 10px 0 2px 0;
+}
+.products-brend {
+    font-size: 17px;
+    color: #918A8A;
+}
+.products-price {
+    font-size: 19px;
+    margin: 8px 0;
+    color: #111;
+}
+
+
+
+@media (max-width: 660px) {
+    .products-item {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-item {
+        max-width: 170px;
+    }
+}

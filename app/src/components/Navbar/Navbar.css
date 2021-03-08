@@ -1,0 +1,39 @@
+.navbar {
+    width: 100%;
+    background: #fefefe;
+    color: #333;
+}
+.navbar-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 2.5em;
+}
+.navbar-logo a {
+    font-family: 'Dancing Script', cursive;
+    font-size: 38px;
+    letter-spacing: 1px;
+    color: #333;
+}
+.navbar-menu ul {
+    display: flex;
+}
+.navbar-menu ul li {
+    margin-left: 10px;
+}
+
+
+@media (max-width: 420px) {
+    .navbar-container {
+        padding: .5em .6em;
+    }
+    .navbar-logo a {
+        font-size: 34px;
+    }
+    .navbar-menu ul li {
+        margin-left: 4px;
+    }
+}
