@@ -2,17 +2,17 @@ import React from 'react'
 
 import './ProductsItem.css'
 
-const ProductsItem = (product) => {
+const ProductsItem = ({ imgURL, name, brend, price }) => {
     return (
             <li className="products-item">
                     <img 
                         className="products-image" 
-                        src={product.imgURL} 
-                        alt={product.name} 
+                        src={imgURL} 
+                        alt={name} 
                     />     
-                    <span className="products-name">{product.name}</span>
-                    <span className="products-brend">{product.brend}</span>
-                    <span className="products-price">{product.price} р.</span>
+                    <span className="products-name">{name}</span>
+                    <span className="products-brend">{brend}</span>
+                    <span className="products-price">{price} р.</span>
             </li>
     )
 }

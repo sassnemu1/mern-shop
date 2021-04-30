@@ -11,17 +11,15 @@ const Catalog = ({ loading, catalog }) => {
                 {loading 
                     ? <p>loading...</p>
                     : catalog.map(({ _id, name, brend, price, imgURL }) => 
-                        <Link to={`/catalog/${_id}`} key={_id}>
+                        <Link to={`/product/${_id}`} key={_id}>
                             <ProductsItem 
-                                    _id={_id}
-                                    name={name} 
-                                    brend={brend}
-                                    price={price} 
-                                    imgURL={imgURL}
-                                    //urlName={ item.urlName }
-                                />
+                                name={name} 
+                                brend={brend}
+                                price={price} 
+                                imgURL={imgURL}
+                            />
                         </Link>
-                    ) 
+                    )
                 }
             </ul>
         </>

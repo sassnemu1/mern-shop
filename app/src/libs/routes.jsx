@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
 import HomePage from '../pages/HomePage/HomePage'
-import CatalogPage from '../pages/Catalog/CatalogPage'
+import CatalogPage from '../pages/CatalogPage/CatalogPage'
 import ShoppingCart from '../pages/ShoppingCart/ShoppingCart'
 import ProductsPage from '../pages/ProductsPage/ProductsPage'
 
@@ -30,13 +30,8 @@ export const useRoutes = () => {
                 <CatalogPage name="brend" />
             </Route>
 
-            <Route path="/shopping-cart" exact >
-                <ShoppingCart />
-            </Route>
-
-            <Route path="/catalog/:id" >
-                <ProductsPage />
-            </Route>
+            <Route path="/shopping-cart" exact component={ShoppingCart} />
+            <Route path="/product/:id" component={ProductsPage} />
         </Switch>
     )
 }
