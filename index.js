@@ -2,16 +2,15 @@ const express = require('express')
 const mongoose = require('mongoose')
 const config = require('config')
 
-
 //App Config
 const app = express()
 const PORT = config.get('port') || 5000
-
 
 app.get('/', (req, res) => res.status(200).send('Hello World !'))
 
 //Routing 
 app.use('/catalog', require('./routes/catalog.routes'))
+app.use('/product', require('./routes/product.routes'))
 
 //Server starting
 const start = async () => {
@@ -29,4 +28,3 @@ const start = async () => {
 }
 
 start()
-
