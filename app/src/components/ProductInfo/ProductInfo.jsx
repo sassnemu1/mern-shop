@@ -1,5 +1,7 @@
 import React from 'react'
 
+import ProductInfoButtonBuy from '../ProductInfoButtonBuy/ProductInfoButtonBuy'
+
 import './ProductInfo.css'
 
 const ProductInfo = ({ information, loading }) => {
@@ -26,6 +28,9 @@ const ProductInfo = ({ information, loading }) => {
                             <span className="product-info__text product-info__brend">
                                 {information.brend}
                             </span>
+                            
+                            {/* Кнопка Купить */}
+                            <ProductInfoButtonBuy product={information} />
                         </div>
                     </div>
                 )
