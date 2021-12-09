@@ -5,6 +5,8 @@ import HomePage from '../pages/HomePage/HomePage'
 import CatalogPage from '../pages/CatalogPage/CatalogPage'
 import ShoppingCart from '../pages/ShoppingCart/ShoppingCart'
 import ProductsPage from '../pages/ProductsPage/ProductsPage'
+import RegistrPage from '../pages/RegistrPage/RegistrPage'
+import AuthPage from '../pages/AuthPage/AuthPage'
 
 
 export const useRoutes = () => {
@@ -28,6 +30,13 @@ export const useRoutes = () => {
             </Route>
             <Route path="/catalog/brend" exact >
                 <CatalogPage name="brend" />
+            </Route>
+
+            <Route path="/registr" exact >
+                <RegistrPage />
+            </Route>
+            <Route path="/auth" exact >
+                <AuthPage />
             </Route>
 
             <Route path="/shopping-cart" exact component={ShoppingCart} />

@@ -13,3 +13,4 @@ export const getCatalogServer = async (url) => {
         return false
     }
 }
+
