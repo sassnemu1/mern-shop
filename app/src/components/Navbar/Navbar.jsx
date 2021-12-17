@@ -2,8 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import { IconButton, Badge } from '@material-ui/core'
-import HomeIcon from '@material-ui/icons/Home'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
+import FaceIcon from '@material-ui/icons/Face';
+import CreateIcon from '@material-ui/icons/Create';
+
 
 import './Navbar.css'
 
@@ -20,9 +22,14 @@ const Navbar = () => {
                     <nav className="navbar-menu">
                         <ul>
                             <li>
-                                <a href="/" className="navbar-menu__item">
+                                <a href="/registr" className="navbar-menu__item">
                                     <IconButton>
-                                        <HomeIcon style={{ fontSize: 28 }} />
+                                        <CreateIcon style={{ fontSize: 28 }} />
+                                    </IconButton>
+                                </a>
+                                <a href="/auth" className="navbar-menu__item">
+                                    <IconButton>
+                                        <FaceIcon style={{ fontSize: 28 }} />
                                     </IconButton>
                                 </a>
                             </li>
