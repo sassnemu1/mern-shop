@@ -17,6 +17,7 @@ app.get('/', (req, res) => res.status(200).send('Сервер пашит !'))
 app.use('/catalog', require('./routes/catalog.routes'))
 app.use('/product', require('./routes/product.routes'))
 app.use('/registr', require('./routes/registr.routes'))
+app.use('/admins', require('./routes/admin.router'))
 
 //Server starting
 const start = async () => {
